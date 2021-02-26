@@ -1,0 +1,7 @@
+{
+  "name": "smacfi-19-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
