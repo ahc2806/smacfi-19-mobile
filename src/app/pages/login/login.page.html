@@ -1,0 +1,53 @@
+<ion-content class="background">
+
+  <ion-grid fixed class="align-center">
+    <ion-row>
+      <ion-col size="12">
+
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
+          <ion-row>
+            <ion-col offset="0.5" size="11">
+              <ion-img [src]="['assets/img/icon/logo2.png']"></ion-img>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-margin-top">
+            <ion-col offset="0.5" size="11">
+              <ion-item class="background">
+                <ion-label>
+                  <ion-icon color="primary" name="mail"></ion-icon>
+                </ion-label>
+                <ion-input placeholder="Correo electrónico" type="email" required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col offset="0.5" size="11">
+              <ion-item class="background">
+                <ion-label>
+                  <ion-icon color="primary" name="lock-closed"></ion-icon>
+                </ion-label>
+                <ion-input placeholder="Contraseña" type="password" required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-margin-top">
+            <ion-col offset="0.5" size="11">
+              <ion-button expand="block" class="background">Iniciar sesión</ion-button>
+            </ion-col>
+          </ion-row>
+        </form>
+
+        <ion-row>
+          <ion-col offset="0.5" size="11" class="ion-margin-top ion-text-center">
+            <a href="" class="reset-password">¿Olvidaste tu contraseña?</a>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
