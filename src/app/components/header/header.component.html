@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-toolbar [color]="color">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="inicio"></ion-back-button>
+      <ion-back-button [defaultHref]="ruta"></ion-back-button>
     </ion-buttons>
 
-    <ion-title class="ion-text-capitalize">{{ titulo }}</ion-title>
+    <ion-title class="ion-text-capitalize style-title">{{ titulo }}</ion-title>
   </ion-toolbar>
 </ion-header>
