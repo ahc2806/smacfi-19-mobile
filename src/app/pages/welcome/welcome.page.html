@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>welcome</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="background">
+  <ion-grid fixed class="align-center">
 
-<ion-content>
+    <ion-row>
+      <ion-col size="12">
 
+        <ion-row class="ion-text-center ion-margin-bottom">
+          <ion-col size="12">
+            <ion-title mode="md" class="large-title" color="secondary">¡Bienvenido a Smacfi-19!</ion-title>
+            <ion-title mode="md" class="ion-margin-bottom">Tu filtro de acceso inteligente.</ion-title>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col offset=" 0.5" size="11">
+            <ion-img [src]="['assets/img/icon/logo2.png']"></ion-img>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-margin-top">
+          <ion-col offset="0.5" size="11">
+            <ion-button routerLink="/login" expand="block" class="background">
+              Iniciar sesión
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-margin-top">
+          <ion-col offset="0.5" size="11">
+            <ion-button color="secondary" expand="block" class="background">
+              Regístrate
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
 
   @Input() titulo: string = '';
-  @Input() ruta: string = '';
+  @Input() dataButtons: object = {};
   @Input() color: string = '';
-
 }

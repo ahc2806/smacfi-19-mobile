@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  dataButtons = {
+    start: {
+      type: 'back-btn',
+      url: '/welcome'
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-<app-header titulo="Iniciar sesión" color="secondary"></app-header>
+<app-header titulo="Iniciar sesión" color="secondary" [dataButtons]="dataButtons"></app-header>
 
 <ion-content class="background">
 
@@ -44,7 +44,9 @@
 
         <ion-row>
           <ion-col offset="0.5" size="11" class="ion-margin-top ion-text-center">
-            <a href="" class="reset-password">¿Olvidaste tu contraseña?</a>
+            <ion-button class="reset-password ion-text-capitalize" color="tertiary" expand="block" fill="clear">
+              ¿Olvidaste tu contraseña?
+            </ion-button>
           </ion-col>
         </ion-row>
 

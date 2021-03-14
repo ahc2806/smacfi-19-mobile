@@ -25,9 +25,6 @@ ion-button.background {
 }
 
 .reset-password {
-    font-size: 18px;
-}
-
-.reset-password:hover {
-    border-bottom: 1px solid #000;
+    font-size: 20px;
+    --border-radius: 50px;
 }

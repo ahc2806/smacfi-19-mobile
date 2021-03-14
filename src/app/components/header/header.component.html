@@ -1,7 +1,19 @@
 <ion-header class="ion-no-border">
   <ion-toolbar [color]="color">
-    <ion-buttons slot="start">
-      <ion-back-button [defaultHref]="ruta"></ion-back-button>
+
+    <ion-buttons *ngIf="dataButtons['start'] !== undefined" slot="start">
+      <ion-back-button *ngIf="dataButtons['start']['type'] === 'back-btn'" [defaultHref]="dataButtons['start']['url']">
+      </ion-back-button>
+
+      <ion-button *ngIf="dataButtons['start']['type'] === 'icon-btn'" (click)="dataButtons['start']['funcion']">
+        <ion-icon slot="icon-only" [name]="dataButtons['start']['icon']"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons *ngIf="dataButtons['end'] !== undefined" slot="end">
+      <ion-button *ngIf="dataButtons['end']['type'] === 'icon-btn'" (click)="dataButtons['end']['funcion']">
+        <ion-icon slot="icon-only" [name]="dataButtons['end']['icon']"></ion-icon>
+      </ion-button>
     </ion-buttons>
 
     <ion-title class="ion-text-capitalize style-title">{{ titulo }}</ion-title>

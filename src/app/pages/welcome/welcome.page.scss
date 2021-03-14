@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Acme';
+  src: url('../../../assets/fonts/Acme-Regular.ttf');
+}
+
+ion-content.background {
+  --background: url('../../../assets/img/fond/fondo-purpura.png') 0 0/100% 100% no-repeat;;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-button.background {
+  --border-radius: 50px;
+  --background-hover: #2C5DAA;
+  height: 50px;
+  font-size: 20px;
+}
+
+ion-title.large-title {
+  font-size: 32px;
+  font-family: 'Acme', sans-serif;
+  margin-bottom: 7px;
+}
