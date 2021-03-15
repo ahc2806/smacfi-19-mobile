@@ -1,5 +1,6 @@
 export { default as Auth } from './auth';
 export { default as Diagnostics } from './diagnostics';
+export { default as Login } from './login';
 export { default as Machine } from './machine';
 export { default as Person } from './person';
 export { default as Person_Canalize } from './person_canalize';
