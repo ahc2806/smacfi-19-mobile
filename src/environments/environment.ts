@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_mysql: 'http://smacfi-19.herokuapp.com/'
+  api_mysql: 'https://smacfi-19.herokuapp.com/'
 };
 
 /*

@@ -25,14 +25,10 @@ export class StudentsService {
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error);
-      this.log(`${operation} failed: ${error.message}`);
+      console.log(`${operation} failed: ${error.message}`);
 
       return of(result as T);
     };
-  }
-
-  private log(message: string) {
-    console.log(message);
   }
 
   public addStudent(student: Student): Observable<Student> {
@@ -49,6 +45,13 @@ export class StudentsService {
       )
   }
 
+  public getStudentById(studentId:Number): Observable<Student> {
+    return this.http.get<Student>(`${api_mysql}${Routes.students}${studentId}`, httpOptions)
+      .pipe(
+        catchError(this.handleError<Student>('getStudents'))
+      )
+  }
+
   public updateStudent(student: Student): Observable<Student> {
     return this.http.put<Student>(`${api_mysql}${Routes.students}${student.id}`, student, httpOptions)
       .pipe(
@@ -56,7 +59,7 @@ export class StudentsService {
       )
   }
 
-  public deleteStudent(studentId: String): Observable<Student> {
+  public deleteStudent(studentId: Number): Observable<Student> {
     return this.http.delete<Student>(`${api_mysql}${Routes.students}${studentId}`, httpOptions)
       .pipe(
         catchError(this.handleError<Student>('deleteStudent'))
