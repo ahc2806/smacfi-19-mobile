@@ -1,0 +1,10 @@
+ion-content.background {
+    --background: url('../../../assets/img/fond/fondo.png') 0 0/100% 100% no-repeat;;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

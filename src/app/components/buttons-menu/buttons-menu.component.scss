@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Acme';
+    src: url('../../../assets/fonts/Acme-Regular.ttf');
+}
+
+ion-card.border {
+    box-shadow: none !important;
+}
+
+ion-card-title.background {
+    color: #000; // #5260ff
+    font-family: 'Acme', sans-serif;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}

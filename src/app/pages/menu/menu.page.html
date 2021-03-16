@@ -1,9 +1,69 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>menu</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="menú" color="secondary"></app-header>
 
-<ion-content>
+<ion-content class="background">
+  <ion-grid fixed class="align-center">
 
+    <ion-row class="align-center">
+      <ion-col size="12">
+        <ion-row>
+          <ion-col size="12">
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/gel']" title="Gel Actibacterial" img="assets/img/icon/gel.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas"
+                  img="assets/img/icon/estadisticas.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/dignostics']" title="Dianósticos"
+                  img="assets/img/icon/diagnostics.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/dignostics']" title="Dianósticos"
+                  img="assets/img/icon/diagnostics.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
+                </app-buttons-menu>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

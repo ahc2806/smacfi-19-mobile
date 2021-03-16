@@ -9,7 +9,7 @@
         <form (ngSubmit)="onSubmit()" #form="ngForm">
           <ion-row>
             <ion-col offset="0.5" size="11">
-              <ion-img [src]="['assets/img/icon/logo2.png']"></ion-img>
+              <ion-img src="assets/img/icon/logo2.png"></ion-img>
             </ion-col>
           </ion-row>
 
@@ -37,7 +37,7 @@
 
           <ion-row class="ion-margin-top">
             <ion-col offset="0.5" size="11">
-              <ion-button expand="block" class="background">Iniciar sesión</ion-button>
+              <ion-button routerLink="/menu" expand="block" class="background">Iniciar sesión</ion-button>
             </ion-col>
           </ion-row>
         </form>

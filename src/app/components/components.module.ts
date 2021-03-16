@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
+
+import { HeaderComponent } from './header/header.component';
+import { ButtonsMenuComponent } from './buttons-menu/buttons-menu.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    ButtonsMenuComponent
   ],
   exports: [
-    HeaderComponent
+    ButtonsMenuComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
