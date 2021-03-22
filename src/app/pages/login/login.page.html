@@ -19,7 +19,9 @@
                 <ion-label>
                   <ion-icon color="primary" name="mail"></ion-icon>
                 </ion-label>
-                <ion-input placeholder="Correo electrónico" type="email" required></ion-input>
+                <ion-input placeholder="Correo electrónico" type="email" name="email" required #email="ngModel"
+                  [(ngModel)]="data.identifier">
+                </ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -30,14 +32,15 @@
                 <ion-label>
                   <ion-icon color="primary" name="lock-closed"></ion-icon>
                 </ion-label>
-                <ion-input placeholder="Contraseña" type="password" required></ion-input>
+                <ion-input placeholder="Contraseña" type="password" name="password" required #password="ngModel"
+                  [(ngModel)]="data.password"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
 
           <ion-row class="ion-margin-top">
             <ion-col offset="0.5" size="11">
-              <ion-button routerLink="/menu" expand="block" class="background">Iniciar sesión</ion-button>
+              <ion-button type="submit" expand="block" class="background">Iniciar sesión</ion-button>
             </ion-col>
           </ion-row>
         </form>

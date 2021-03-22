@@ -5,7 +5,7 @@ import { Observable, of, throwError  } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 // Model
-import { Auth, User } from '../models';
+import { Auth, Login, User } from '../models';
 
 
 @Injectable({
@@ -23,9 +23,8 @@ export class UsersService {
     };
   }
 
-  public login(email: String, password: String): Observable<Auth> {
-    const data = { email, password }; // TODO: Check the correct field for login
-    return this.http.post<Auth>(`${api_mysql}${Routes.login}`, data)
+  public login(user : Login): Observable<Auth> {
+    return this.http.post<Auth>(`${api_mysql}${Routes.login}`, user)
       .pipe(
         catchError(this.handleError<Auth>('makeLogin'))
       )

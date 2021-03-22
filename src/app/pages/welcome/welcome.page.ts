@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StudentsService } from '../../services/students.service';
 @Component({
   selector: 'app-welcome',
@@ -7,19 +8,12 @@ import { StudentsService } from '../../services/students.service';
 })
 export class WelcomePage implements OnInit {
 
-  constructor(private studentService: StudentsService) { }
-
-  getStudents() {
-    this.studentService.getStudents()
-      .subscribe(resp => {
-        console.log(resp);
-      })
-  }
+  constructor(private router : Router) { }
 
   ngOnInit() {
-    console.log('Hi')
-    const studens = this.getStudents();
-    console.log("The students are: ", studens)
+    if (localStorage.getItem('@auth') && localStorage.getItem('@information')) {
+      this.router.navigateByUrl('/menu');
+    }
   }
 
 }
