@@ -2,152 +2,68 @@
 
 <ion-content class="background">
 
-  <ion-col>
-    <div class="ion-text-center">
-      <h3>SMACFI-19</h3>
-    </div>
-  </ion-col>
+  <ion-row class="ion-text-center">
+    <ion-col>
+      <ion-title mode="md" class="large-title" color="tertiary">Smacfi-19</ion-title>
+    </ion-col>
+  </ion-row>
 
   <ion-grid fixed class="align-center">
     <ion-row class="align-center">
-
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/gel']" title="Gel Antibacterial" img="assets/img/icon/gel.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            <app-buttons-menu [routerLink]="['/gel']" title="Gel Antibacterial" img="assets/img/icon/gel.png">
+            </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas"
+            <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas"
                 img="assets/img/icon/estadisticas.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/dignostics']" title="Diagnósticos"
+            <app-buttons-menu [routerLink]="['/diagnostics']" title="Diagnósticos"
                 img="assets/img/icon/diagnostics.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
+            </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/reports']" title="Historial" img="assets/img/icon/reportes.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            <app-buttons-menu [routerLink]="['/reports']" title="Historial" img="assets/img/icon/historial1.png">
+            </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-          <ion-row>
-            <ion-col>
-              <app-buttons-menu [routerLink]="['/users']" title="Perfil" img="assets/img/icon/usuario.png">
-              </app-buttons-menu>
-            </ion-col>
-          </ion-row>
+            <app-buttons-menu [routerLink]="['/users']" title="Perfil" img="assets/img/icon/hombre.png">
+            </app-buttons-menu>
         </div>
       </ion-col>
 
+      <div>
+        <ion-row class="ion-margin-top">
+          <ion-col offset="0.5" size="11">
+            <ion-button type="submit" shape="round" routerLink="/menu" class="background">
+              Cerrar Sesión
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+      
     </ion-row>
-  </ion-grid>
-
-  <ion-grid fixed class="align-center">
-    <ion-row class="align-center">
-      <ion-col size="12">
-        <ion-row>
-          <ion-col size="12">
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/gel']" title="Gel Antibacterial" img="assets/img/icon/gel.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas"
-                  img="assets/img/icon/estadisticas.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col size="12">
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/dignostics']" title="Diagnósticos"
-                  img="assets/img/icon/diagnostics.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-
-
-        <ion-row>
-          <ion-col size="12">
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/reports']" title="Historial" img="assets/img/icon/reportes.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-
-            <ion-row>
-              <ion-col size="6">
-                <app-buttons-menu [routerLink]="['/users']" title="Perfil" img="assets/img/icon/usuario.png">
-                </app-buttons-menu>
-              </ion-col>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-      </ion-col>
-
-      <ion-button color="tertiary" shape="round" size="large">Cerrar Sesión</ion-button>
-
-    </ion-row>
-
-
-
   </ion-grid>
 </ion-content>
