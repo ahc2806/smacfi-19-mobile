@@ -8,3 +8,4 @@ export { default as Report } from './report';
 export { default as Role } from './role';
 export { default as Student } from './student';
 export { default as User } from './user';
+export { default as Gel } from './gel';

@@ -12,58 +12,56 @@
     <ion-row class="align-center">
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/gel']" title="Gel Antibacterial" img="assets/img/icon/gel.png">
-            </app-buttons-menu>
+          <app-buttons-menu [routerLink]="['/gel']" title="Gel Antibacterial" img="assets/img/icon/gel.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas"
-                img="assets/img/icon/estadisticas.png">
-            </app-buttons-menu>
+          <app-buttons-menu [routerLink]="['/statistics']" title="Estadísticas" img="assets/img/icon/estadisticas.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/diagnostics']" title="Diagnósticos"
-                img="assets/img/icon/diagnostics.png">
-            </app-buttons-menu>
+          <app-buttons-menu [routerLink]="['/diagnostics']" title="Diagnósticos" img="assets/img/icon/diagnostics.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
-            </app-buttons-menu>
+          <app-buttons-menu [routerLink]="['/canalize']" title="Canalizar" img="assets/img/icon/canalize.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/reports']" title="Historial" img="assets/img/icon/historial1.png">
-            </app-buttons-menu>
+          <app-buttons-menu [routerLink]="['/reports']" title="Historial" img="assets/img/icon/historial1.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <ion-col size="6">
         <div>
-            <app-buttons-menu [routerLink]="['/users']" title="Perfil" img="assets/img/icon/hombre.png">
-            </app-buttons-menu>
+          <app-buttons-menu title="Perfil" img="assets/img/icon/hombre.png">
+          </app-buttons-menu>
         </div>
       </ion-col>
 
       <div>
         <ion-row class="ion-margin-top">
           <ion-col offset="0.5" size="11">
-            <ion-button type="submit" shape="round" routerLink="/menu" class="background">
+            <ion-button (click)="cerrar_sesion()" type="submit" shape="round" class="background">
               Cerrar Sesión
             </ion-button>
           </ion-col>
         </ion-row>
       </div>
-      
+
     </ion-row>
   </ion-grid>
 </ion-content>

@@ -4,8 +4,11 @@
 
 export const environment = {
   production: false,
-  api_mysql: 'https://smacfi-19.herokuapp.com/'
+  api_mysql: 'https://smacfi-19.herokuapp.com/',
+  api_mongodb: 'https://smacfi-19-iot.herokuapp.com/'
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

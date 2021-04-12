@@ -1,5 +1,6 @@
+import { GelService } from './../../services/gel.service';
 import { Component, OnInit } from '@angular/core';
-
+import { Gel } from 'src/app/models';
 @Component({
   selector: 'app-gel',
   templateUrl: './gel.page.html',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GelPage implements OnInit {
 
-  constructor() { }
+  gel: any;
+
+  constructor(private gelService: GelService) {
+    this.gel = this.gelService.getGel();
+  }
 
   ngOnInit() {
+
   }
 
 }

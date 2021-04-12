@@ -9,8 +9,10 @@ export const Routes = {
   persons_canalizes: 'personas-canalizadas/',
   reports: 'reportes/',
   students: 'alumnos/',
-  users: 'users/'
+  users: 'users/',
+  gel: 'dispensador-de-gel/'
 };
 
 // APIS
 export const api_mysql = environment.api_mysql;
+export const api_mongo = environment.api_mongodb

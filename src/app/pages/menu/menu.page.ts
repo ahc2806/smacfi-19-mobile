@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Componente {
   redirectTo: string; 
@@ -32,9 +33,15 @@ export class MenuPage implements OnInit {
    }
   ];
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  
   ngOnInit() {
+  }
+
+  cerrar_sesion() {
+    localStorage.removeItem('@auth');
+    localStorage.removeItem('@information');
+    this.router.navigateByUrl("/login");
   }
 
 }
